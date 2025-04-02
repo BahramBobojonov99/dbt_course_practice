@@ -7,8 +7,8 @@ models:
       materialized: view 
     columns:
       - name: aircraft_code
-        description: "Дата создания заказа"
+        description: "Код самолета"
         tests:
           - not_null     
       - name: model
-        description: "Номер производственной партии продукции"
+        description: "Модель самолета"
