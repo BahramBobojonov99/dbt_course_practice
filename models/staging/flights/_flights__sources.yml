@@ -1,0 +1,20 @@
+sources:
+  - name: flights
+    database: dbt_db
+    schema: staging
+    tables:
+      - name: aircrafts
+        description: "Aircrafts"
+      - name: airports
+        description: "Airports"
+      - name: flights
+        description: "Flights"
+      - name: tickets
+        description: "Tickets"
+      - name: seats
+        description: "Seats"
+      - name: boarding_passes
+        description: "Boarding passes"
+      - name: ticket_flights
+        description: "Ticket flights"
+

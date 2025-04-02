@@ -1,0 +1,14 @@
+version: 1
+
+models:
+  - name: stg_flights__aircrafts
+    description: "Модель, которая возвращает заказы из г. Москва"
+    config:
+      materialized: view 
+    columns:
+      - name: aircraft_code
+        description: "Дата создания заказа"
+        tests:
+          - not_null     
+      - name: model
+        description: "Номер производственной партии продукции"
